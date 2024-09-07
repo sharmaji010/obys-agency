@@ -11,6 +11,17 @@ html, body{
     height: 100%;
     width: 100%;
 }
+#cursur{
+    height: 2.1vw;
+    width: 2.1vw;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.665);
+    /* background-color: #fff; */
+    position: fixed;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+}
 
 #loader{
     height: 100vh;
@@ -109,8 +120,60 @@ html, body{
     width: 100%;
     background-color:#151515;
 }
-/* #page2{
-    height: 100vh;
-    width: 100%;
-    background-color: #8b3939;
-} */
+#page1 #nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5vw 5.8vw;
+    opacity:1
+}
+
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.8vw;
+    /* transition: all cubic-bezier(); */
+}
+
+#nav-part2 h4{
+    font-weight: 500;
+}
+
+.hero:nth-child(2){
+    margin-top: 7vw;
+}
+#page1 .hero {
+    width: 73%;
+    margin-left: 27% ;
+    overflow: hidden;
+    position: relative;
+    z-index: 99999;
+    /* background-color: red; */
+    
+}
+#page1 .hero h1{
+    font-size: 7.2vw;
+    line-height: 7.2vw;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#hero3{
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+}
+#hero3 h2{
+    font-size: 7.2vw;
+    line-height: 7.2vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: .4vw;
+    border-bottom: .6vw solid #fff;
+    /* text-decoration: underline; */
+}
+
+#hero3 h2:hover{
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+}
