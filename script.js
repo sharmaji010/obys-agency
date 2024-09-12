@@ -52,7 +52,7 @@ setInterval(function(){
     else{
         h5Timer.innerHTML = grow;
     }
-},30)
+},27)
     }
 })
 tl.to(".line h2",{
@@ -63,7 +63,7 @@ tl.to(".line h2",{
 tl.to("#loader",{
     opacity: 0,
     y:-1200,
-    delay:0,
+    delay:2.5,
     duration: 1
 })
 // 
