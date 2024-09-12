@@ -769,6 +769,134 @@ html, body{
 
 
  @media (max-width:600px){
+
+    #loader{
+        height: 100vh;
+        width: 100%;
+        background-color: #0B0B0B;
+        position: fixed;
+        z-index: 9999;
+        padding: 65vw 7vw;
+    }
+    
+    
+    .line{
+        height:-webkit-fit-content;
+        height:-moz-fit-content;
+        height:fit-content;
+        /* background-color: red; */
+        overflow: hidden;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        gap: 4vw;
+    }
+    
+    #line1-part1{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        gap: 2vw;
+    }
+    
+    #line1-part1 h5,h6{
+        font-size: 4vw;
+        font-weight: 500;
+        font-family: 'silk serif';
+    }
+    #line1-part1 h5{
+        width: 6vw;
+        text-align: right;
+        /* background-color: red; */
+    }
+    
+    .line h2{
+        text-transform: uppercase;
+        font-size: 5.4vw;
+        opacity: 0;
+        font-weight: 900;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+        -webkit-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
+    }
+    #loader .line h1{
+        text-transform: uppercase;
+        font-size: 7vw;
+        
+    }
+    
+    @-webkit-keyframes anime {
+        0%{
+            font-family: 'plain light';
+            -webkit-text-stroke: 1px #fff;
+            color: transparent;
+            opacity: 1; 
+            font-weight: 500; 
+        }
+    
+        47%{
+            font-family: 'plain light';
+            -webkit-text-stroke: 1px #fff;
+            color: transparent;
+            opacity: 0;
+            font-weight: 500;
+        }
+        50%{
+            font-family: 'silk serif';
+            -webkit-text-stroke: 1px #fff;
+            color: transparent;
+            opacity: 1;
+            font-weight: 500;
+        }
+        100%{
+            font-family: 'silk serif';
+            -webkit-text-stroke: 1px #fff;
+            color: transparent;
+            opacity: 0;
+            font-weight: 500;
+        }
+    }
+    
+    @keyframes anime {
+        0%{
+            font-family: 'plain light';
+            -webkit-text-stroke: 1px #fff;
+            color: transparent;
+            opacity: 1; 
+            font-weight: 500; 
+        }
+    
+        47%{
+            font-family: 'plain light';
+            -webkit-text-stroke: 1px #fff;
+            color: transparent;
+            opacity: 0;
+            font-weight: 500;
+        }
+        50%{
+            font-family: 'silk serif';
+            -webkit-text-stroke: 1px #fff;
+            color: transparent;
+            opacity: 1;
+            font-weight: 500;
+        }
+        100%{
+            font-family: 'silk serif';
+            -webkit-text-stroke: 1px #fff;
+            color: transparent;
+            opacity: 0;
+            font-weight: 500;
+        }
+    }
+    
     #page1{
         height: 50vh;
         width: 100%;
